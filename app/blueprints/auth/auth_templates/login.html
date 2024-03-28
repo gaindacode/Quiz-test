@@ -3,23 +3,26 @@
 {%block title%} Login {%endblock%}
 
 {%block styles%} 
-<link rel = "stylesheet" href = "../static/styles/signup.css " >
+<link rel = "stylesheet" href = "../static/styles/login.css" >
 {%endblock%}
 
     {%block content%} 
     
     {%include './includes/navbar.html'%}  
-   <div class="flex-container">
+   <div class="container d-flex">
     <form method = 'POST'>
       {{form.hidden_tag()}}
       <div class="mb-3">
-        <img src="../static/images/theivesLogo.jpeg" class="logo-img">
+        <img src="/app/static/images/logo1.jpeg" class="logo-img">
+        </div>
+        
           <div class="mb-3">
             <h2 class="title-txt"> Login </h2>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+          <label for="email" class="form-label" placeholder="Email Address">Email</label>
           {{form.email(class='form-control', id="email")}}
         </div>
+      
           
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
@@ -27,8 +30,10 @@
         </div>
        
         {{form.submit_btn(class = "btn my-btn", id = 'btn_login')}}
+        
         <div>
-        <a href="#" class="a2">Forgot Password? </a>
+        <br/>
+        <a href="forgotPassword()" class="a2"><small>Forgot Password? </small></a>
       </div>
       </form>
       </div>

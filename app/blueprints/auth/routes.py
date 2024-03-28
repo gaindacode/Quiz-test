@@ -52,4 +52,6 @@ def logout():
     logout_user()
     return redirect(url_for('auth.login'))
   
-
+@auth.route("/forgotPassword")
+def forgotPassword():
+    return render_template("forgotPassword.html")

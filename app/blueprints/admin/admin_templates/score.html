@@ -4,7 +4,7 @@
 Scores
 {%endblock%}
 {%block styles%} 
-<link rel = "stylesheet" href = "../static/styles/signup.css " >
+<link rel = "stylesheet" href = "../static/styles/login.css" >
 {%endblock%}
 {%block content%} 
 {%include './includes/navbar.html'%}        
@@ -12,18 +12,21 @@ Scores
 <form method = 'POST'>
     {{form.hidden_tag()}}
     <div class="mb-3">
-      <img src="../static/images/theivesLogo.jpeg" class="logo-img">
         <div class="mb-3">
           <h2 class="title-txt">Add Scores</h2>
      <div class="mb-3">
       <label for="score_category" class="form-label">Score Category </label>
         {{form.score_category(class='form-control', id="score_category")}}
+      </div>
     <div class="mb-3">
       <label for="score_points" class="form-label">Score Points </label>
       {{form.score_points(class='form-control', id="score_points")}}
+
+    </div>
     <div class="mb-3">
 
       {{form.submit_btn(class='btn my-btn', id='btn_course')}}
+    </div>
   </form>
 </div>
 {%endblock%}

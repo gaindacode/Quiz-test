@@ -4,12 +4,12 @@
     
 } */
 
-body{
+/* body{
     background: #134E5E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
-} 
+}  */
 
 
 /* .pokeprint{
@@ -19,13 +19,16 @@ body{
     border: 1px solid navy; 
 } */
 
-.flex-container{
+.container{
     display: flex;
     justify-content: center;
-    background-color: aqua;
-    width : 500px;
     height: 500px; 
-    border: 1px solid navy; 
+    width: 500px;
+    border: 1px solid rgb(223, 223, 232); 
+}
+
+.card-home{
+    height: 500px;
 }
 
 .user_form{

@@ -4,6 +4,8 @@
 Admin - Questions
 {%endblock%}
 {%block styles%} 
+<link rel = "stylesheet" href = "../static/styles/login.css" >
+
 {%endblock%}
 {%block content%} 
 {%include './includes/navbar.html'%}        
@@ -15,7 +17,7 @@ Admin - Questions
       <label for="questiona" class="form-label">Questiona</label>
         {{form.questiona(class='form-control', id="questiona")}}
       </div>
-
+      
       <div class="mb-3">
         <label for="option_a" class="form-label">Option A </label>
           {{form.option_a(class='form-control', id="option_a")}}
@@ -25,6 +27,7 @@ Admin - Questions
           <label for="option_b" class="form-label">Option B </label>
             {{form.option_b(class='form-control', id="option_b")}}
           </div> 
+        
         <div class="mb-3">
           <label for="option_c" class="form-label">Option C </label>
             {{form.option_c(class='form-control', id="option_c")}}
@@ -56,6 +59,7 @@ Admin - Questions
     <div class="mb-3">
 
       {{form.submit_btn(class='btn submit_btn', id='btn_question')}}
+    </div>
   </form>
 </div>
 {%endblock%}

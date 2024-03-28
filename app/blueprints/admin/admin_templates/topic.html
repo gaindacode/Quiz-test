@@ -4,7 +4,7 @@
 Sign Up 
 {%endblock%}
 {%block styles%} 
-<link rel = "stylesheet" href = "../static/styles/signup.css " >
+<link rel = "stylesheet" href = "../static/styles/login.css" >
 {%endblock%}
 {%block content%} 
 {%include './includes/navbar.html'%}        
@@ -18,9 +18,11 @@ Sign Up
     <div class="mb-3">
       <label for="course_id" class="form-label">Course </label>
       {{form.course_id(class='form-control', id="course_id")}}
+    </div>
     <div class="mb-3">
 
       {{form.submit_btn(class='btn my-btn', id='btn_course')}}
+    </div>
   </form>
 </div>
 {%endblock%}
